@@ -1,11 +1,16 @@
 # Brawl Stars Discord Rich Presence
+
 <img src="https://kseiru.ru/brawl/brawl_stars.png" style="border-radius: 25%; width: 128px; height: 128px;">
+
 ### Dependencies:
+
 ```py
 pypresence
 requests
 ```
+
 These dependencies are in the `requirements.txt` file, so they maybe can be installed with the command `pip install -r requirements.txt`
 
 ### this shitty code written by
-<img src="https://www.freepnglogos.com/uploads/discord-logo-png/discord-logo-logodownload-download-logotipos-1.png" style="width: 25px; height: 25px">`kseiru#4182`
+
+<img src="https://www.freepnglogos.com/uploads/discord-logo-png/discord-logo-logodownload-download-logotipos-1.png" style="width: 20px; height: 20px">`kseiru#4182`
