@@ -35,10 +35,14 @@ top_brawler = brawlers[0]
 
 top_brawler_name = top_brawler["name"]
 top_brawler_trophies = top_brawler["trophies"]
-
-RPC = Presence(client_id)
-RPC.connect()
-RPC.update(large_image=f"https://kseiru.ru/brawl/{icon}.png", details=f"{username} - {trophies} 🏆", state=f"Top brawler: {top_brawler_name} - {top_brawler_trophies} 🏆", large_text="Brawl Stars", start=int(datetime.now().timestamp()))
+try:
+    RPC = Presence(client_id)
+    RPC.connect()
+    RPC.update(large_image=f"https://kseiru.ru/brawl/{icon}.png", details=f"{username} - {trophies} 🏆", state=f"Top brawler: {top_brawler_name} - {top_brawler_trophies} 🏆", large_text="Brawl Stars", start=int(datetime.now().timestamp()))
+except:
+    print("Something went wrong...")
+    exit()
+print("RPC is Loaded!")
 
 while True:
     time.sleep(15)
